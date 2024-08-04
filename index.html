@@ -52,11 +52,93 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ===========  MOBILE-MENU  =========== -->
+
+      <div class="mobile-menu is-open">
+        <div class="container momile-menu-container">
+          <button type="button" class="button-close">
+            <svg class="modal-icon-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav-menu">
+            <ul class="nav-list-mobile">
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile active-nav-link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="">Portfolio</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="contacts-mobile-menu">
+            <ul class="contacts-list-mobile">
+              <li class="contacts-item-mobile">
+                <a
+                  class="contacts-link-mobile active-contacts-link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="contacts-item-mobile">
+                <a class="contacts-link-mobile" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="icon-mobile-menu">
+            <li class="mobile-menu-li">
+              <a href="" class="mobile-menu-link">
+                <svg class="media-icons-mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-li">
+              <a class="mobile-menu-link">
+                <svg class="media-icons-mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-li">
+              <a class="mobile-menu-link">
+                <svg class="media-icons-mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-li">
+              <a class="mobile-menu-link">
+                <svg class="media-icons-mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- ========hero section 1 ======== -->
+      <!-- =========== HERO SECTION =========  -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -77,7 +159,7 @@
                 </svg>
               </div>
 
-              <h3 class="lorem-subtitle">Strategy</h3>
+              <h3 class="lorem-subtitle-text">Strategy</h3>
               <p class="lorem-item-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -90,7 +172,7 @@
                 </svg>
               </div>
 
-              <h3 class="lorem-subtitle">Punctuality</h3>
+              <h3 class="lorem-subtitle-text">Punctuality</h3>
               <p class="lorem-item-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -103,7 +185,7 @@
                 </svg>
               </div>
 
-              <h3 class="lorem-subtitle">Diligence</h3>
+              <h3 class="lorem-subtitle-text">Diligence</h3>
               <p class="lorem-item-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -115,7 +197,7 @@
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="lorem-subtitle">Technologies</h3>
+              <h3 class="lorem-subtitle-text">Technologies</h3>
               <p class="lorem-item-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -125,7 +207,7 @@
         </div>
       </section>
 
-      <!-- ========our team section 3 ======== -->
+      <!--/* ======== OUR TEAM SECTION 3 ========= */ -->
 
       <section class="about-our-team">
         <div class="container">
@@ -133,7 +215,8 @@
           <ul class="images-lisl">
             <li class="list-one">
               <img
-                src="./images/img-1.jpg"
+                srcset="./images/Mark/img.jpg 1x, ./images/Mark/img@2x.jpg 2x"
+                src="./images/Mark/img.jpg"
                 alt="Mark Guerrero "
                 width="264"
                 height="260"
@@ -180,7 +263,8 @@
 
             <li class="list-one">
               <img
-                src="./images/img-2.jpg"
+                srcset="./images/Tom/img.jpg 1x, ./images/Tom/img@2x.jpg 2x"
+                src="./images/Tom/img.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -225,14 +309,18 @@
               </div>
             </li>
 
-
             <li class="list-one">
               <img
-                src="./images/img-3.jpg"
+                srcset="
+                  ./images/Camila/img.jpg    1x,
+                  ./images/Camila/img@2x.jpg 2x
+                "
+                src="./images/Camila/img.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
-                class="images-teams"/>
+                class="images-teams"
+              />
               <div class="name-container">
                 <h3 class="lorem-subtitle-name">Camila Garcia</h3>
                 <p class="lorem-team-text">Marketing</p>
@@ -273,7 +361,11 @@
             </li>
             <li class="list-one">
               <img
-                src="./images/img-4.jpg"
+                srcset="
+                  ./images/Daniel/img.jpg    1x,
+                  ./images/Daniel/img@2x.jpg 2x
+                "
+                src="./images/Daniel/img.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -321,7 +413,7 @@
         </div>
       </section>
 
-      <!-- ========portfolio section 4 ======== -->
+      <!-- ============= PORTFOLIO section 4 ==========  -->
 
       <section class="portfolio">
         <div class="container">
@@ -331,7 +423,11 @@
             <li class="portfolio-item">
               <div class="portfolio-box">
                 <img
-                  src="./images-2/img-5.jpg"
+                  srcset="
+                    ./images/bankink/img.jpg    1x,
+                    ./images/bankink/img@2x.jpg 2x
+                  "
+                  src="./images/bankink/img.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -352,7 +448,11 @@
             <li class="portfolio-item">
               <div class="portfolio-box">
                 <img
-                  src="./images-2/img-6.jpg"
+                  srcset="
+                    ./images/cashless/img.jpg    1x,
+                    ./images/cashless/img@2x.jpg 2x
+                  "
+                  src="./images/cashless/img.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -373,7 +473,11 @@
             <li class="portfolio-item">
               <div class="portfolio-box">
                 <img
-                  src="./images-2/img-7.jpg"
+                  srcset="
+                    ./images/meditation/img.jpg    1x,
+                    ./images/meditation/img@2x.jpg 2x
+                  "
+                  src="./images/meditation/img.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -395,7 +499,8 @@
             <li class="portfolio-item">
               <div class="portfolio-box">
                 <img
-                  src="./images-2/img-8.jpg"
+                  srcset="./images/taxi/img.jpg 1x, ./images/taxi/img@2x.jpg 2x"
+                  src="./images/taxi/img.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -416,7 +521,11 @@
             <li class="portfolio-item">
               <div class="portfolio-box">
                 <img
-                  src="./images-2/img-9.jpg"
+                  srcset="
+                    ./images/screen/img.jpg    1x,
+                    ./images/screen/img@2x.jpg 2x
+                  "
+                  src="./images/screen/img.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -437,7 +546,11 @@
             <li class="portfolio-item">
               <div class="portfolio-box">
                 <img
-                  src="./images-2/img-10.jpg"
+                  srcset="
+                    ./images/courses/img.jpg    1x,
+                    ./images/courses/img@2x.jpg 2x
+                  "
+                  src="./images/courses/img.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -459,7 +572,7 @@
       </section>
     </main>
 
-    <!-- ======== footer  ======== -->
+    <!-- ======== ======== FOOTER ======= ======== -->
 
     <footer class="page-footer">
       <div class="container container-footer">
@@ -471,140 +584,156 @@
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
-          </div>
+        </div>
 
-          <div class="footer-icons">
-            <p class="footer-paragraf">Social media</p>
-            <ul class="footer-ul">
-              <li class="footer-li">
-                <a href="" class="footer-link">
-                  <svg class="media-icons-footer" width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-li">
-                <a class="footer-link">
-                  <svg class="media-icons-footer" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                  </svg>
-                </a>
-              </li>
+        <div class="footer-icons">
+          <p class="footer-paragraf">Social media</p>
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a href="" class="footer-link">
+                <svg class="media-icons-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-link">
+                <svg class="media-icons-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
 
-              <li class="footer-li">
-                <a class="footer-link">
-                  <svg class="media-icons-footer" width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook-1"></use>
-                  </svg>
-                </a>
-              </li>
+            <li class="footer-li">
+              <a class="footer-link">
+                <svg class="media-icons-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
 
-              <li class="footer-li">
-                <a class="footer-link">
-                  <svg class="media-icons-footer" width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-           
-          </div> 
+            <li class="footer-li">
+              <a class="footer-link">
+                <svg class="media-icons-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="footer-subscribe">
-            <p class="footer-subscribe-text">Subscribe</p>
-            <form class="subscribe-form" >
-              <label  class="subscribe-label">
-                   <input type="email" name="footer-form-mail" 
-              class="footer-form-input" placeholder="E-mail"/>
-              </label> 
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <input
+                type="email"
+                name="footer-form-mail"
+                class="footer-form-input"
+                placeholder="E-mail"
+              />
+            </label>
 
-             <button type="submit" class="button-form-footer" >Subscribe
-                  <svg class="footer-icon-form" width="24" height="24">
-                    <use href="./images/icons.svg#icon-icon-send"></use>
-                  </svg>
-              </button>
-              
-            </form>
-          </div>
-        
+            <button type="submit" class="button-form-footer">
+              Subscribe
+              <svg class="footer-icon-form" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
+    <!-- =========M O D A L======== -->
 
-<!-- =========M O D A L======== -->
-
-    <div class="backdrop is-open">
+    <div class="backdrop is-ope">
       <div class="modal">
-        <button type="button" class="modal-type-btn"> 
-          
-            <svg class="modal-icon-btn" width="8" height="8">
-              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
-            </svg>
-          
+        <button type="button" class="button-close">
+          <svg class="modal-icon-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        
-        
-      <form > 
-        
-        <div class="modal-field-div">
-        <label for="user-name"  class="form-label"> Name</label>
-        <div class="modal-field-wrap">
-          <input type="text" id="user-name" name="user-name" class="modal-input" />
-          <svg class="modal-icon" width="18" height="24">
-            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-          </svg>
-          </div>
-        </div>
 
-        <div class="modal-field-div">
-          <label for="user-phone" class="form-label"> Phone</label>
-          <div class="modal-field-wrap">
-          <input id="user-phone" type="tel" name="user-phone" class="modal-input"/>
-          <svg class="modal-icon" width="18" height="24">
-            <use href="./images/icons.svg#icon-Vector-1"></use>
-          </svg>
-          </div>
-        </div>
-        
-          
-        <div class="modal-field-div">
-          <label for="user-email" class="form-label"> Email </label>
-          <div class="modal-field-wrap">
-          <input id="user-email" type="email" name="user-email" class="modal-input"/>
-          <svg class="modal-icon" width="18" height="24">
-            <use href="./images/icons.svg#icon-Vector-2"></use>
-          </svg>
-          </div>
+        <form class="form-modal">
+          <div class="modal-field-div">
+            <label for="user-name" class="form-label"> Name</label>
+            <div class="modal-field-wrap">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="modal-input"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
 
-           <div class="modal-comment-div">
-          <label for="user-comment" class="form-label"> Comment</label>
-            <textarea id="user-comment"  name="user-comment"  class="modal-comment" 
-            placeholder="Text input"
+          <div class="modal-field-div">
+            <label for="user-phone" class="form-label"> Phone</label>
+            <div class="modal-field-wrap">
+              <input
+                id="user-phone"
+                type="tel"
+                name="user-phone"
+                class="modal-input"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-Vector-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field-div">
+            <label for="user-email" class="form-label"> Email </label>
+            <div class="modal-field-wrap">
+              <input
+                id="user-email"
+                type="email"
+                name="user-email"
+                class="modal-input"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-Vector-2"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-comment-div">
+            <label for="user-comment" class="form-label"> Comment</label>
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              class="modal-comment"
+              placeholder="Text input"
             ></textarea>
           </div>
 
           <div class="modal-field-checkbox">
-             <input type="checkbox" 
-             name="user-privacy" 
-             id="user-privacy"
-             value="true" 
-             class="modal-check visually-hidden"/>
-            
-             <label for="user-privacy" class="modal-check-text">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="modal-check visually-hidden"
+            />
+
+            <label for="user-privacy" class="modal-check-text">
               <span class="check-text">
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the <a href="privacy-policy.html" 
-              class="privacy-policy-link">Privacy Policy</a> </label>
-
-
+              I accept the terms and conditions of the
+              <a href="privacy-policy.html" class="privacy-policy-link"
+                >Privacy Policy</a
+              >
+            </label>
           </div>
-          
-          
+
           <button type="submit" class="modal-submit-button">send</button>
         </form>
       </div>
